@@ -37,11 +37,20 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request): array
     {
         return array_merge(parent::share($request), [
+            //Localization
+            'locale' => session()->get('locale'),
             //Flash Messages
             'flash' => [
                 'message' => fn () => $request->session()->get('message'),
-                'toastr' => fn () => $request->session()->get('toastr')
-            ]
+                'toastr' => function()use($request){
+                    $toastr = $request->session()->get('toastr');
+                    if($toastr){
+                        $toastr['_token'] = \Carbon\Carbon::now()->timestamp;
+                    }
+
+                    return $toastr;
+                }
+            ],
         ]);
     }
 }

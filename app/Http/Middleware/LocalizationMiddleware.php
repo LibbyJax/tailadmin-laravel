@@ -31,7 +31,7 @@ class LocalizationMiddleware
         // Determinate the language of the session
         if ($request->session()->has('locale')) {
             // Apply the lang of the session to global
-            \Illuminate\Support\Facades\App::setLocale($request->session()->get('locale'));
+            App::setLocale($request->session()->get('locale'));
             \Carbon\Carbon::setLocale($request->session()->get('locale') . '_' . strtoupper($request->session()->get('locale')) . '.UTF-8');
         }
         return $next($request);
