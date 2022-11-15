@@ -1,8 +1,11 @@
-require("./bootstrap");
+import './bootstrap';
+import '../css/app.css';
 
-import { createApp, h } from "vue";
-import { createInertiaApp } from "@inertiajs/inertia-vue3";
-import { InertiaProgress } from "@inertiajs/progress";
+import { createApp, h } from 'vue';
+import { createInertiaApp } from '@inertiajs/inertia-vue3';
+import { InertiaProgress } from '@inertiajs/progress';
+import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
 /* FontAwesome */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -37,21 +40,20 @@ const i18n = createI18n({
 /* Highlighter */
 import VueHighlightJS from 'vue3-highlightjs'
 
-const appName =
-    window.document.getElementsByTagName("title")[0]?.innerText || "Laravel";
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
-    resolve: (name) => require(`./Pages/${name}.vue`),
+    resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
     setup({ el, app, props, plugin }) {
         return createApp({ render: () => h(app, props) })
             .use(plugin)
             .use(i18n)
             .use(VueHighlightJS)
             .component("icon", FontAwesomeIcon)
-            .mixin({ methods: { route } })
+            .use(ZiggyVue, Ziggy)
             .mount(el);
     },
 });
 
-InertiaProgress.init({ color: "#4B5563" });
+InertiaProgress.init({ color: '#4B5563' });
