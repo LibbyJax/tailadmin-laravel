@@ -24,6 +24,7 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
     /*Spatie Permissions Package*/
     use HasRoles;
+
     /**
      * The attributes that are mass assignable.
      *
