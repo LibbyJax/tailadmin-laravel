@@ -39,9 +39,6 @@ class AppServiceProvider extends ServiceProvider
                     ? Session::get('errors')->getBag('default')->getMessages()
                     : (object)[];
             },
-            'lang' => function () {
-                return Session::get('locale');
-            },
             'project_info' => function () {
                 return Env::get('APP_NAME');
             },
@@ -60,12 +57,6 @@ class AppServiceProvider extends ServiceProvider
                 }
             }
         ]);
-
-        Inertia::share('flash', function () {
-            return [
-                'message' => Session::get('message'),
-            ];
-        });
 
         /*Search Macro for Backend Table Component*/
         Builder::macro('tableSearch', function ($request) {
