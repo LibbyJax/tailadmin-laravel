@@ -36,7 +36,7 @@ Route::get('lang/{locale}', function ($locale) {
 
 
 })->name('lang');
-Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
     Route::get('/', function () {
         return Inertia::render('Dashboard', [
             'canLogin' => Route::has('login'),
@@ -78,7 +78,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     });
 
-    /*This pages for example, you can delete when you design the your system*/
+    /*This pages for example, you can delete when you design the system*/
     //Example Pages
     Route::get('login-app', function () {
         return Inertia::render('Samples/Examples/Login');
@@ -248,6 +248,3 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         return Inertia::render('Samples/FormElements/Validation');
     })->name('form-validation');
 });
-
-
-
