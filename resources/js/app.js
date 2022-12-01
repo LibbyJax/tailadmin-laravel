@@ -21,6 +21,9 @@ import generalLangRu from "@/Lang/ru/general_lang_ru";
 import generalLangTr from "@/Lang/tr/general_lang_tr";
 import generalLangZh from "@/Lang/zh/general_lang_zh";
 
+/*Floating Vue*/
+import FloatingVue from 'floating-vue'
+
 const i18n = createI18n({
     legacy: false,
     locale: "en",
@@ -50,6 +53,7 @@ createInertiaApp({
             .use(plugin)
             .use(i18n)
             .use(VueHighlightJS)
+            .use(FloatingVue)
             .component("icon", FontAwesomeIcon)
             .use(ZiggyVue, Ziggy)
             .mount(el);
