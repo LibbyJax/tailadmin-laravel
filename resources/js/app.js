@@ -24,6 +24,10 @@ import generalLangZh from "@/Lang/zh/general_lang_zh";
 /*Floating Vue*/
 import FloatingVue from 'floating-vue'
 
+/*Pinia*/
+import { createPinia } from 'pinia'
+const pinia = createPinia()
+
 const i18n = createI18n({
     legacy: false,
     locale: "en",
@@ -54,7 +58,8 @@ createInertiaApp({
             .use(i18n)
             .use(VueHighlightJS)
             .use(FloatingVue)
-            .component("icon", FontAwesomeIcon)
+            .use(pinia)
+            .component("FontAwesomeIcon", FontAwesomeIcon)
             .use(ZiggyVue, Ziggy)
             .mount(el);
     },
