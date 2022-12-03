@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Spatie\Permission\Models\Permission;
@@ -29,13 +30,19 @@ Route::get('lang/{locale}', function ($locale) {
         'tr' => 'tr',
         'zh' => 'zh',
     ];
+
     if (array_key_exists($locale, $availableLangs)) {
         session()->put('locale', $locale);
+
+        // Apply the lang of the session to global
+        App::setLocale(session()->get('locale'));
+        \Carbon\Carbon::setLocale(session()->get('locale') . '_' . strtoupper(session()->get('locale')) . '.UTF-8');
     }
+
     return redirect()->back();
 
-
 })->name('lang');
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
     Route::get('/', function () {
         return Inertia::render('Dashboard', [
@@ -169,7 +176,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         return Inertia::render('Samples/Components/Collapsible');
     })->name('collapsible');
     Route::get('content-box', function () {
-        return Inertia::render('Samples/Component/ContentBox');
+        return Inertia::render('Samples/Components/ContentBox');
     })->name('content-box');
     Route::get('dropdown', function () {
         return Inertia::render('Samples/Components/Dropdown');
