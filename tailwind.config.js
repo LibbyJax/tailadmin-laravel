@@ -10,6 +10,7 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
         './resources/js/**/*.js',
+        './resources/js/**/*.json',
     ],
 
     theme: {
