@@ -42,13 +42,13 @@ class HandleInertiaRequests extends Middleware
             //Flash Messages
             'flash' => [
                 'message' => fn () => $request->session()->get('message'),
-                'toastr' => function()use($request){
-                    $toastr = $request->session()->get('toastr');
-                    if($toastr){
-                        $toastr['_token'] = \Carbon\Carbon::now()->timestamp;
+                'notification' => function()use($request){
+                    $notification = $request->session()->get('notification');
+                    if($notification){
+                        $notification['_token'] = \Carbon\Carbon::now()->timestamp;
                     }
 
-                    return $toastr;
+                    return $notification;
                 }
             ],
         ]);

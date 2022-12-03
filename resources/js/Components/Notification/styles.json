@@ -1,0 +1,42 @@
+{
+    "type": {
+        "success": {
+            "container": "bg-emerald-500 text-slate-50",
+            "clearIcon": "rounded-full bg-rose-500"
+        },
+        "danger": {
+            "container": "bg-rose-500 text-slate-50",
+            "clearIcon": "rounded-full bg-rose-500"
+        },
+        "warning": {
+            "container": "bg-amber-500 text-slate-50",
+            "clearIcon": "rounded-full bg-rose-500"
+        },
+        "info": {
+            "container": "bg-sky-500 text-slate-50",
+            "clearIcon": "rounded-full bg-rose-500"
+        },
+        "regular-light": {
+            "container": "bg-slate-100 text-slate-700",
+            "clearIcon": "rounded-full bg-rose-500"
+        },
+        "regular-dark": {
+            "container": "bg-slate-700 text-slate-50",
+            "clearIcon": "rounded-full bg-rose-500"
+        }
+    },
+    "position": {
+        "bl": "fixed bottom-4 left-4",
+        "br": "fixed bottom-4 right-6",
+        "tl": "fixed top-4 left-4",
+        "tr": "fixed top-4 right-6",
+        "snack": "relative w-full"
+    },
+    "radius": {
+        "sm": "rounded-sm",
+        "md": "rounded-md",
+        "regular": "rounded",
+        "lg": "rounded-lg",
+        "xl": "rounded-xl"
+    }
+}

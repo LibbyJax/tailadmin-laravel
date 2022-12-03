@@ -1,0 +1,12 @@
+/*Toastr*/
+.notification-container {
+    @apply relative flex mr-10 mb-8 p-4 rounded-lg text-white select-none
+}
+
+.notification-clear-icon {
+    @apply absolute flex justify-center items-center w-6 h-6 -top-2 -right-2 cursor-pointer hover:scale-110 active:scale-90 transition
+}
+
+.notification-bulk-delete{
+    @apply flex justify-end items-center space-x-2 -mt-5 mb-5 mr-10 text-xs dark:text-slate-100 cursor-pointer select-none
+}

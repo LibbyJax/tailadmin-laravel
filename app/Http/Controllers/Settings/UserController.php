@@ -83,17 +83,17 @@ class UserController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
         if($id != 1){
             $user = User::find($id);
             User::destroy($id);
-            Session::flash('toastr', ['type' => 'gradient-red-to-pink', 'position' => 'rb','content' => '<b>'.$user->name. '</b> deleted']);
+            Session::flash('notification', ['type' => 'success', 'position' => 'br','content' => '<b>'.$user->name. '</b> deleted', 'html' => true]);
             return redirect()->back() ;
         }else{
-            Session::flash('toastr', ['type' => 'solid-yellow', 'position' => 'rb','content' => '<b>You can\'t delete the admin</b>']);
+            Session::flash('notification', ['type' => 'warning', 'position' => 'br','content' => 'You can\'t delete the admin', 'html' => false]);
             return redirect()->back() ;
         }
     }
