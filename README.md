@@ -1,10 +1,12 @@
-TailAdmin Inertia
+TailAdmin Laravel - Inertiajs
 ======
 <p align="center">
-  <img src="https://v2.tailadmin.dev/img/misc/tailadmin_main.jpg" alt="TailAdmin"/>
+  <img src="/art/tailadmin_main.jpg" alt="TailAdmin"/>
 </p>
 <p align="center">
   It's a dashboard theme/UI-Starter Kit with Laravel9, TailwindCSS3, Inertia and Vue3 (JetStream).
+
+
 </p>
 
 <p align="center">
@@ -32,23 +34,23 @@ TailAdmin Inertia
 
 <p align="center">
 <a href="https://discord.gg/TnjA2GqYmw">
-    <img src="public/img/demo/discord.svg" height="40">
+    <img src="/art/discord.svg" height="40">
 </a>
 </p>
 
 
 Requirements
 ------
+
 1. PHP min v.8
 2. DB server (Recommended:MySQL)
 3. [composer min v.2](https://getcomposer.org/)
-4. [nodejs min v.14](https://nodejs.org/)
+4. [nodejs min v.16](https://nodejs.org/)
 5. Please check other requirements of  [Laravel](https://laravel.com/) and [Inertia](https://inertiajs.com/)
-
 
 Setup Directions
 ------
-
+You may use Composer to install TailAdmin Core into your new Laravel project: composer require
 1. ```npm install```
 2. ```composer install```
 3. Please clone .env.example and copied file name change from .env.example to .env
@@ -57,14 +59,15 @@ Setup Directions
 6. ```php artisan migrate --seed```
 7. ```php artisan storage:link```
 8. ```php artisan key:generate```
-9. ```npm run hot```
+9. ```npm run build``` (for production)
+10. ```npm run dev``` (for development)
 10. ```php artisan serve```
 11. ```Goto: http://localhost:8000```
 
 Admin Login Infos / Demo Account
 ------
 
-- **Demo:** *[https://v2.tailadmin.dev](https://v2.tailadmin.dev)*
+- **Demo:** *[https://v3.tailadmin.dev](https://v3.tailadmin.dev)*
 - **Email:** *admin@tailadmin.dev*
 - **Password:** *admin*
 
@@ -74,9 +77,9 @@ Admin Login Infos / Demo Account
 
 ## Help
 
-If you need to help more than this documentation: 
- - You can join our [Discord Channel](https://discord.gg/TnjA2GqYmw) then ask your questions
- - Access to our [Tabbs page](https://tailadmin.tabbs.co/) for how to make links (Install in Linux, solution of the npm errors etc.)
+If you need to help more than this documentation:
+- You can join our [Discord Channel](https://discord.gg/TnjA2GqYmw) then ask your questions
+- Access to our [Tabbs page](https://tailadmin.tabbs.co/) for how to make links (Install in Linux, solution of the npm errors etc.)
 
 ## Featured :
 
@@ -93,34 +96,34 @@ If you need to help more than this documentation:
 - Statistic Widgets for Summary or Small Data Windows
 - It works with FontAwesome
 - ### Content Components :
-    - Alert 
-    - Avatar / Avatar Group for Team Lists 
-    - Badge 
-    - Breadcrumb 
-    - Buttons 
+    - Alert
+    - Avatar / Avatar Group for Team Lists
+    - Badge
+    - Breadcrumb
+    - Buttons
     - Content Card
     - Collapsible Content
     - Dropdowns
-    - Lists 
-    - Modals 
+    - Lists
+    - Modals
     - Pagination
-    - Popovers 
-    - Progress 
+    - Popovers
+    - Progress
     - Statistic Widgets
-    - Tabs 
+    - Tabs
     - FrontEnd Table
-    - BackEnd Table 
-      - With Dynamic Query Builder
-      - Auto generated advanced search fields
-      - Sort 
-      - Show-hide columns
+    - BackEnd Table
+        - With Dynamic Query Builder
+        - Auto generated advanced search fields
+        - Sort
+        - Show-hide columns
     - Tooltips
 
 - ### Form Components :
-    - Form Content 
-    - Form Section 
-    - Input Group 
-    - HTML Inputs 
+    - Form Content
+    - Form Section
+    - Input Group
+    - HTML Inputs
     - Text Input
     - Selectable Text Input (Combo)
     - File Input
@@ -133,16 +136,16 @@ If you need to help more than this documentation:
     - Date/Calendar Input
     - Between Input
 
-> :rocket:  We are going to make the big updates about app because this theme is using in our projects therefore the updates will be continuous
+> :rocket:  We are going to make the big updates about app because this theme is using in our projects therefore the
+> updates will be continuous
 
 ---
 
 ### Partners and Sponsors
 
-
-> <a href="https://cleavr.io/" target="_blank"><img src="https://core.tailadmin.dev/img/misc/cleavr_io_07092021_07092022.jpg" style="width: 200px" alt="Cleavr"/><br>
-  Cleavr is your all-in-one server and deployment management platform for your PHP and NodeJS apps. Provision,
-deploy, monitor, backup, & more.
+> <a href="https://cleavr.io/" target="_blank"><img src="/art/cleavr-logo.svg" style="width: 40px; height: 40px" alt="Cleavr"/><br>
+> Cleavr is your all-in-one server and deployment management platform for your PHP and NodeJS apps. Provision,
+> deploy, monitor, backup, & more.
 </a>
 
 > :metal: If you want to support us, you can send a mail to us via [admin@tailadmin.dev](mailto:admin@tailadmin.dev)
