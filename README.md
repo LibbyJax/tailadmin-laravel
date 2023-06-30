@@ -57,7 +57,7 @@ Setup Directions
 6. ```php artisan migrate --seed```
 7. ```php artisan storage:link```
 8. ```php artisan key:generate```
-9. ```npm run hot```
+9. ```npm run dev```
 10. ```php artisan serve```
 11. ```Goto: http://localhost:8000```
 
