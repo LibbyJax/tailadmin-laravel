@@ -50,18 +50,18 @@
 </template>
 
 <script>
-    import JetActionMessage from '@/Jetstream/ActionMessage'
-    import JetButton from '@/Jetstream/Button'
-    import JetFormSection from '@/Jetstream/FormSection'
-    import JetInput from '@/Jetstream/Input'
-    import JetInputError from '@/Jetstream/InputError'
-    import JetLabel from '@/Jetstream/Label'
-    import TFormContent from "@/Components/Form/TFormContent";
-    import TButton from "@/Components/Button/TButton";
-    import TCheckIcon from "@/Components/Icon/TCheckIcon";
-    import TFormSection from "@/Components/Form/TFormSection";
-    import TInputGroup from "@/Components/Form/TInputGroup";
-    import TInputText from "@/Components/Form/Inputs/TInputText";
+    import JetActionMessage from '@/Jetstream/ActionMessage.vue'
+    import JetButton from '@/Jetstream/Button.vue'
+    import JetFormSection from '@/Jetstream/FormSection.vue'
+    import JetInput from '@/Jetstream/Input.vue'
+    import JetInputError from '@/Jetstream/InputError.vue'
+    import JetLabel from '@/Jetstream/Label.vue'
+    import TFormContent from "@/Components/Form/TFormContent.vue";
+    import TButton from "@/Components/Button/TButton.vue";
+    import TCheckIcon from "@/Components/Icon/TCheckIcon.vue";
+    import TFormSection from "@/Components/Form/TFormSection.vue";
+    import TInputGroup from "@/Components/Form/TInputGroup.vue";
+    import TInputText from "@/Components/Form/Inputs/TInputText.vue";
 
     export default {
         components: {

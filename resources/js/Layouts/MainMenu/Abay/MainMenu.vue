@@ -10,7 +10,7 @@ defineEmits(['updateMainMenuStatus'])
 
 /*Sources*/
 import MainMenuLinks from "@/Sources/mainMenuLinks";
-import UserMenu from "@/Layouts/MainMenu/Abay/UserMenu";
+import UserMenu from "@/Layouts/MainMenu/Abay/UserMenu.vue";
 import {appConf, mainMenuConf} from "@/config";
 import {menuStatus} from "@/Functions/menuTrigger";
 

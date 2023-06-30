@@ -26,12 +26,12 @@
 </template>
 
 <script>
-import AppLayout from "@/Layouts/AppLayout";
-import TFormContent from "@/Components/Form/TFormContent";
-import TFormSection from "@/Components/Form/TFormSection";
-import TInputGroup from "@/Components/Form/TInputGroup";
-import TInputText from "@/Components/Form/Inputs/TInputText";
-import TInputInlineEditableRepeatable from "@/Components/Form/Inputs/TInputInlineEditableRepeatable";
+import AppLayout from "@/Layouts/AppLayout.vue";
+import TFormContent from "@/Components/Form/TFormContent.vue";
+import TFormSection from "@/Components/Form/TFormSection.vue";
+import TInputGroup from "@/Components/Form/TInputGroup.vue";
+import TInputText from "@/Components/Form/Inputs/TInputText.vue";
+import TInputInlineEditableRepeatable from "@/Components/Form/Inputs/TInputInlineEditableRepeatable.vue";
 
 
 export default {

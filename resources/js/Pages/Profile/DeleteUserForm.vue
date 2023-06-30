@@ -60,20 +60,20 @@
 </template>
 
 <script>
-    import JetActionSection from '@/Jetstream/ActionSection'
-    import JetDialogModal from '@/Jetstream/DialogModal'
-    import JetDangerButton from '@/Jetstream/DangerButton'
-    import JetInput from '@/Jetstream/Input'
-    import JetInputError from '@/Jetstream/InputError'
-    import JetSecondaryButton from '@/Jetstream/SecondaryButton'
-    import TFormContent from "@/Components/Form/TFormContent";
-    import TButton from "@/Components/Button/TButton";
-    import TCheckIcon from "@/Components/Icon/TCheckIcon";
-    import TFormSection from "@/Components/Form/TFormSection";
-    import TModal from "@/Components/Modal/TModal";
-    import TTrashIcon from "@/Components/Icon/TTrashIcon";
-    import TInputGroup from "@/Components/Form/TInputGroup";
-    import TInputText from "@/Components/Form/Inputs/TInputText";
+    import JetActionSection from '@/Jetstream/ActionSection.vue'
+    import JetDialogModal from '@/Jetstream/DialogModal.vue'
+    import JetDangerButton from '@/Jetstream/DangerButton.vue'
+    import JetInput from '@/Jetstream/Input.vue'
+    import JetInputError from '@/Jetstream/InputError.vue'
+    import JetSecondaryButton from '@/Jetstream/SecondaryButton.vue'
+    import TFormContent from "@/Components/Form/TFormContent.vue";
+    import TButton from "@/Components/Button/TButton.vue";
+    import TCheckIcon from "@/Components/Icon/TCheckIcon.vue";
+    import TFormSection from "@/Components/Form/TFormSection.vue";
+    import TModal from "@/Components/Modal/TModal.vue";
+    import TTrashIcon from "@/Components/Icon/TTrashIcon.vue";
+    import TInputGroup from "@/Components/Form/TInputGroup.vue";
+    import TInputText from "@/Components/Form/Inputs/TInputText.vue";
 
     export default {
         components: {

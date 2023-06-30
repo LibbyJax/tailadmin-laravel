@@ -126,8 +126,8 @@ import {Link} from "@inertiajs/inertia-vue3";
 import {Inertia} from "@inertiajs/inertia";
 
 /*Components*/
-import TDropdown from "@/Components/Dropdown/TDropdown";
-import TAvatar from "@/Components/Avatar/TAvatar";
+import TDropdown from "@/Components/Dropdown/TDropdown.vue";
+import TAvatar from "@/Components/Avatar/TAvatar.vue";
 
 /*Multi Language*/
 import {useI18n} from "vue-i18n";

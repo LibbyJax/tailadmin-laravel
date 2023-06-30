@@ -10,7 +10,7 @@
 
 <script>
 import {defineComponent} from "vue";
-import TLock from "@/Components/Auth/TLock";
+import TLock from "@/Components/Auth/TLock.vue";
 
 export default defineComponent({
     name: "LockScreen",
