@@ -526,23 +526,23 @@
 import {Inertia} from "@inertiajs/inertia";
 import {computed, defineComponent, reactive, toRefs, watch, ref, onBeforeMount} from "vue";
 import {debouncedWatch} from "@vueuse/core";
-import TButton from "@/Components/Button/TButton";
-import TModal from "@/Components/Modal/TModal";
-import TInputCheckBox from "@/Components/Form/Inputs/TInputCheckBox";
-import TInputSelect from "@/Components/Form/Inputs/TInputSelect";
-import TDropdown from "@/Components/Dropdown/TDropdown";
-import TList from "@/Components/List/TList";
-import TListItem from "@/Components/List/TListItem";
-import TInputGroup from "@/Components/Form/TInputGroup";
-import TInputText from "@/Components/Form/Inputs/TInputText";
+import TButton from "@/Components/Button/TButton.vue";
+import TModal from "@/Components/Modal/TModal.vue";
+import TInputCheckBox from "@/Components/Form/Inputs/TInputCheckBox.vue";
+import TInputSelect from "@/Components/Form/Inputs/TInputSelect.vue";
+import TDropdown from "@/Components/Dropdown/TDropdown.vue";
+import TList from "@/Components/List/TList.vue";
+import TListItem from "@/Components/List/TListItem.vue";
+import TInputGroup from "@/Components/Form/TInputGroup.vue";
+import TInputText from "@/Components/Form/Inputs/TInputText.vue";
 
 import {useI18n} from "vue-i18n";
 import table_en from "@/Lang/en/table_lang";
 import table_tr from "@/Lang/tr/table_lang";
 import _ from "lodash";
-import TInputBetween from "@/Components/Form/Inputs/TInputBetween";
-import TPaginate from "@/Components/Paginate/TPaginate";
-import TAlert from "@/Components/Alert/TAlert";
+import TInputBetween from "@/Components/Form/Inputs/TInputBetween.vue";
+import TPaginate from "@/Components/Paginate/TPaginate.vue";
+import TAlert from "@/Components/Alert/TAlert.vue";
 
 export default defineComponent({
     name: "TBackEndTable",

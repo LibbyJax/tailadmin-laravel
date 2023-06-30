@@ -93,21 +93,21 @@
 </template>
 
 <script>
-import JetActionSection from '@/Jetstream/ActionSection'
-import JetButton from '@/Jetstream/Button'
-import JetConfirmsPassword from '@/Jetstream/ConfirmsPassword'
-import JetDangerButton from '@/Jetstream/DangerButton'
-import JetSecondaryButton from '@/Jetstream/SecondaryButton'
-import TFormContent from "@/Components/Form/TFormContent";
-import TButton from "@/Components/Button/TButton";
-import TFormSection from "@/Components/Form/TFormSection";
-import TAlert from "@/Components/Alert/TAlert";
-import TCheckIcon from "@/Components/Icon/TCheckIcon";
-import TInformationCircleIcon from "@/Components/Icon/TInformationCircleIcon";
-import TCheckCircleSolidIcon from "@/Components/Icon/TCheckCircleSolidIcon";
-import TRefreshIcon from "@/Components/Icon/TRefreshIcon";
-import TEyeIconIcon from "@/Components/Icon/TEyeIcon";
-import TEyeIcon from "@/Components/Icon/TEyeIcon";
+import JetActionSection from '@/Jetstream/ActionSection.vue'
+import JetButton from '@/Jetstream/Button.vue'
+import JetConfirmsPassword from '@/Jetstream/ConfirmsPassword.vue'
+import JetDangerButton from '@/Jetstream/DangerButton.vue'
+import JetSecondaryButton from '@/Jetstream/SecondaryButton.vue'
+import TFormContent from "@/Components/Form/TFormContent.vue";
+import TButton from "@/Components/Button/TButton.vue";
+import TFormSection from "@/Components/Form/TFormSection.vue";
+import TAlert from "@/Components/Alert/TAlert.vue";
+import TCheckIcon from "@/Components/Icon/TCheckIcon.vue";
+import TInformationCircleIcon from "@/Components/Icon/TInformationCircleIcon.vue";
+import TCheckCircleSolidIcon from "@/Components/Icon/TCheckCircleSolidIcon.vue";
+import TRefreshIcon from "@/Components/Icon/TRefreshIcon.vue";
+import TEyeIconIcon from "@/Components/Icon/TEyeIcon.vue";
+import TEyeIcon from "@/Components/Icon/TEyeIcon.vue";
 
 export default {
     components: {

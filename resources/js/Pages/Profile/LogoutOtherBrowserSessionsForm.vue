@@ -101,21 +101,21 @@
 </template>
 
 <script>
-import JetActionMessage from '@/Jetstream/ActionMessage'
-import JetActionSection from '@/Jetstream/ActionSection'
-import JetButton from '@/Jetstream/Button'
-import JetDialogModal from '@/Jetstream/DialogModal'
-import JetInput from '@/Jetstream/Input'
-import JetInputError from '@/Jetstream/InputError'
-import JetSecondaryButton from '@/Jetstream/SecondaryButton'
-import TFormContent from "@/Components/Form/TFormContent";
-import TFormSection from "@/Components/Form/TFormSection";
-import TButton from "@/Components/Button/TButton";
-import TCheckIcon from "@/Components/Icon/TCheckIcon";
-import TLogOutIcon from "@/Components/Icon/TLogOutIcon";
-import TModal from "@/Components/Modal/TModal";
-import TInputGroup from "@/Components/Form/TInputGroup";
-import TInputText from "@/Components/Form/Inputs/TInputText";
+import JetActionMessage from '@/Jetstream/ActionMessage.vue'
+import JetActionSection from '@/Jetstream/ActionSection.vue'
+import JetButton from '@/Jetstream/Button.vue'
+import JetDialogModal from '@/Jetstream/DialogModal.vue'
+import JetInput from '@/Jetstream/Input.vue'
+import JetInputError from '@/Jetstream/InputError.vue'
+import JetSecondaryButton from '@/Jetstream/SecondaryButton.vue'
+import TFormContent from "@/Components/Form/TFormContent.vue";
+import TFormSection from "@/Components/Form/TFormSection.vue";
+import TButton from "@/Components/Button/TButton.vue";
+import TCheckIcon from "@/Components/Icon/TCheckIcon.vue";
+import TLogOutIcon from "@/Components/Icon/TLogOutIcon.vue";
+import TModal from "@/Components/Modal/TModal.vue";
+import TInputGroup from "@/Components/Form/TInputGroup.vue";
+import TInputText from "@/Components/Form/Inputs/TInputText.vue";
 
 export default {
     props: ['sessions'],

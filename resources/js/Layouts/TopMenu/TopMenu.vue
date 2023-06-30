@@ -1,11 +1,11 @@
 <script setup>
 /*Functions*/
 import {defineComponent, inject, provide, ref} from "vue";
-import TopMenuNotification from "@/Layouts/TopMenu/TopMenuNotification";
-import TopMenuUserMenu from "@/Layouts/TopMenu/TopMenuUserMenu";
-import TLoading from "@/Components/Loading/TLoading";
-import TopMenuThemeSelector from "@/Layouts/TopMenu/TopMenuThemeSelector";
-import TopMenuLanguageSelector from "@/Layouts/TopMenu/TopMenuLanguageSelector";
+import TopMenuNotification from "@/Layouts/TopMenu/TopMenuNotification.vue";
+import TopMenuUserMenu from "@/Layouts/TopMenu/TopMenuUserMenu.vue";
+import TLoading from "@/Components/Loading/TLoading.vue";
+import TopMenuThemeSelector from "@/Layouts/TopMenu/TopMenuThemeSelector.vue";
+import TopMenuLanguageSelector from "@/Layouts/TopMenu/TopMenuLanguageSelector.vue";
 import {menuStatus, updateMenuStatus} from "@/Functions/menuTrigger"
 
 /*Sources*/

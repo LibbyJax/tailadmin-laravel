@@ -95,22 +95,22 @@
 </template>
 
 <script>
-import JetButton from '@/Jetstream/Button'
-import JetFormSection from '@/Jetstream/FormSection'
-import JetInput from '@/Jetstream/Input'
-import JetInputError from '@/Jetstream/InputError'
-import JetLabel from '@/Jetstream/Label'
-import JetActionMessage from '@/Jetstream/ActionMessage'
-import JetSecondaryButton from '@/Jetstream/SecondaryButton'
-import TFormContent from "@/Components/Form/TFormContent";
-import TFormSection from "@/Components/Form/TFormSection";
-import TInputGroup from "@/Components/Form/TInputGroup";
-import TButton from "@/Components/Button/TButton";
-import TPlusIcon from "@/Components/Icon/TPlusIcon";
-import TXIcon from "@/Components/Icon/TXIcon";
-import TInputText from "@/Components/Form/Inputs/TInputText";
-import TBadge from "@/Components/Badge/TBadge";
-import TCheckIcon from "@/Components/Icon/TCheckIcon";
+import JetButton from '@/Jetstream/Button.vue'
+import JetFormSection from '@/Jetstream/FormSection.vue'
+import JetInput from '@/Jetstream/Input.vue'
+import JetInputError from '@/Jetstream/InputError.vue'
+import JetLabel from '@/Jetstream/Label.vue'
+import JetActionMessage from '@/Jetstream/ActionMessage.vue'
+import JetSecondaryButton from '@/Jetstream/SecondaryButton.vue'
+import TFormContent from "@/Components/Form/TFormContent.vue";
+import TFormSection from "@/Components/Form/TFormSection.vue";
+import TInputGroup from "@/Components/Form/TInputGroup.vue";
+import TButton from "@/Components/Button/TButton.vue";
+import TPlusIcon from "@/Components/Icon/TPlusIcon.vue";
+import TXIcon from "@/Components/Icon/TXIcon.vue";
+import TInputText from "@/Components/Form/Inputs/TInputText.vue";
+import TBadge from "@/Components/Badge/TBadge.vue";
+import TCheckIcon from "@/Components/Icon/TCheckIcon.vue";
 
 export default {
     components: {

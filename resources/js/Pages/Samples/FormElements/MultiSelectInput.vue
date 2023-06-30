@@ -117,12 +117,12 @@
 </template>
 
 <script>
-import AppLayout from "@/Layouts/AppLayout";
-import TButton from "@/Components/Button/TButton";
-import TFormSection from "@/Components/Form/TFormSection";
-import TFormContent from "@/Components/Form/TFormContent";
-import TInputGroup from "@/Components/Form/TInputGroup";
-import TInputMultiSelect from "@/Components/Form/Inputs/TInputMultiSelect";
+import AppLayout from "@/Layouts/AppLayout.vue";
+import TButton from "@/Components/Button/TButton.vue";
+import TFormSection from "@/Components/Form/TFormSection.vue";
+import TFormContent from "@/Components/Form/TFormContent.vue";
+import TInputGroup from "@/Components/Form/TInputGroup.vue";
+import TInputMultiSelect from "@/Components/Form/Inputs/TInputMultiSelect.vue";
 import {ref, defineComponent} from "vue";
 
 export default defineComponent({
